@@ -4,6 +4,7 @@ import android.content.Context;
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
+import android.graphics.Path;
 import android.graphics.Rect;
 import android.util.AttributeSet;
 import android.util.Log;
@@ -11,13 +12,8 @@ import android.view.View;
 
 public class CustomView extends View {
 
-    private Paint paint;
+    private Paint blackPaint;
     private DrawnFigure figure = null;
-
-    public CustomView(Context context) {
-        super(context);
-        this.paint = new Paint();
-    }
 
     public static enum DrawnFigure {
         SQUARE, TRIANGLE, CIRCLE, CROSS
@@ -25,31 +21,36 @@ public class CustomView extends View {
 
     public CustomView(Context context, AttributeSet attrs) {
         super(context, attrs);
-        this.paint = new Paint();
+
+        this.blackPaint = new Paint();
+        this.blackPaint.setColor(Color.BLACK);
     }
 
     @Override
     public void onDraw(Canvas canvas) {
-        if(this.figure != null) {
-            this.paint.setColor(Color.WHITE);
-            Log.d("in", "idosido");
-            canvas.drawRect(0, 0, this.getWidth(), this.getHeight(), this.paint);
+        super.onDraw(canvas);
 
-            this.paint.setColor(Color.BLACK);
+        if(this.figure != null) {
+            float width = this.getWidth(), height = this.getHeight();
             if(this.figure.equals(DrawnFigure.CIRCLE)) {
-                canvas.drawCircle(100f, 100f, 50f, this.paint);
+                canvas.drawCircle(50.0f, 50.0f, 50.0f, this.blackPaint);
             } else if(this.figure.equals(DrawnFigure.CROSS)) {
-                canvas.drawLine(0f, 0f, this.getWidth(), this.getHeight(), this.paint);
-                canvas.drawLine(this.getWidth(), 0f, 0f, this.getHeight(), this.paint);
+                canvas.drawLine(0.0f, 0.0f, width, height, this.blackPaint);
+                canvas.drawLine(width, 0.0f, 0.0f, height, this.blackPaint);
+            } else if(this.figure.equals(DrawnFigure.SQUARE)) {
+                canvas.drawRect(50.0f, 50.0f, 100.0f, 100.0f, this.blackPaint);
             } else if(this.figure.equals(DrawnFigure.TRIANGLE)) {
-                canvas.drawLine(20f, 20f, 100f, 20f, this.paint);
-                canvas.drawLine(20f, 20f, 60f, 100f, this.paint);
-                canvas.drawLine(100f, 20f, 60f, 100f, this.paint);
-            } else if(figure.equals(DrawnFigure.SQUARE)){
-                canvas.drawRect(20f, 20f, 20f, 20f, this.paint);
+                Path path = new Path();
+                path.moveTo(100.0f, 100.0f);
+                path.lineTo(150.0f, 150.0f);
+                path.lineTo(50.0f, 150.0f);
+                path.lineTo(100.0f, 100.0f);
+                path.close();
+                canvas.drawPath(path, this.blackPaint);
             }
         }
     }
+
 
     public void setDrawnFigure(DrawnFigure figure) {
         this.figure = figure;
