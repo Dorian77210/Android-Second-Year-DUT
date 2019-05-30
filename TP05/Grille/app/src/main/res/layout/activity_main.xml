@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/black"
+    >
+
+    <TableRow
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        >
+
+        <com.example.grille.CustomView
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_column="0"
+            android:layout_margin="10dp"
+            android:id="@+id/view1"
+            />
+
+        <com.example.grille.CustomView
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_column="1"
+            android:layout_margin="10dp"
+            android:id="@+id/view2"
+            />
+
+        <com.example.grille.CustomView
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_column="2"
+            android:layout_margin="10dp"
+            android:id="@+id/view3"
+            />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        >
+        <com.example.grille.CustomView
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_column="0"
+            android:layout_margin="10dp"
+            android:id="@+id/view4"
+            />
+
+        <com.example.grille.CustomView
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_column="1"
+            android:layout_margin="10dp"
+            android:id="@+id/view5"
+            />
+
+        <com.example.grille.CustomView
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_column="2"
+            android:layout_margin="10dp"
+            android:id="@+id/view6"
+            />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        >
+
+        <com.example.grille.CustomView
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_column="0"
+            android:layout_margin="10dp"
+            android:id="@+id/view7"
+            />
+
+        <com.example.grille.CustomView
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_column="1"
+            android:layout_margin="10dp"
+            android:id="@+id/view8"
+            />
+
+        <com.example.grille.CustomView
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_column="2"
+            android:layout_margin="10dp"
+            android:id="@+id/view9"
+            />
+
+    </TableRow>
+
+</TableLayout>
