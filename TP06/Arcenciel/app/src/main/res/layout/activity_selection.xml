@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SelectionActivity"
+    android:orientation="horizontal"
+    android:background="#414042"
+    >
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:id="@+id/selection_container"
+        >
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rouge"
+            android:textColor="@android:color/tab_indicator_text"
+            android:layout_weight="1"
+            android:background="@android:color/tab_indicator_text"
+            android:id="@+id/rouge"
+            />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Orange"
+            android:textColor="@android:color/tab_indicator_text"
+            android:layout_weight="1"
+            android:id="@+id/orange"
+            android:background="@android:color/tab_indicator_text"
+            />
+
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jaune"
+            android:textColor="@android:color/tab_indicator_text"
+            android:layout_weight="1"
+            android:background="@android:color/tab_indicator_text"
+            android:id="@+id/jaune"
+            />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vert"
+            android:textColor="@android:color/tab_indicator_text"
+            android:layout_weight="1"
+            android:id="@+id/vert"
+            android:background="@android:color/tab_indicator_text"
+            />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bleu"
+            android:textColor="@android:color/tab_indicator_text"
+            android:layout_weight="1"
+            android:background="@android:color/tab_indicator_text"
+            android:id="@+id/bleu"
+            />
+
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="indigo"
+            android:textColor="@android:color/tab_indicator_text"
+            android:layout_weight="1"
+            android:id="@+id/indigo"
+            android:background="@android:color/tab_indicator_text"
+            />
+
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Violet"
+            android:textColor="@android:color/tab_indicator_text"
+            android:layout_weight="1"
+            android:background="@android:color/tab_indicator_text"
+            android:id="@+id/violet"
+            />
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        >
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ok_button"
+            android:layout_centerInParent="true"
+            android:text="OK"
+            />
+
+
+    </RelativeLayout>
+
+</LinearLayout>
