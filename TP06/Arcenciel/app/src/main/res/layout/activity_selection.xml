@@ -16,76 +16,63 @@
         android:id="@+id/selection_container"
         >
 
-        <RadioButton
+        <CheckBox
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Rouge"
-            android:textColor="@android:color/tab_indicator_text"
             android:layout_weight="1"
-            android:background="@android:color/tab_indicator_text"
             android:id="@+id/rouge"
             />
 
-        <RadioButton
+        <CheckBox
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Orange"
-            android:textColor="@android:color/tab_indicator_text"
             android:layout_weight="1"
             android:id="@+id/orange"
-            android:background="@android:color/tab_indicator_text"
             />
 
 
-        <RadioButton
+        <CheckBox
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Jaune"
-            android:textColor="@android:color/tab_indicator_text"
             android:layout_weight="1"
-            android:background="@android:color/tab_indicator_text"
             android:id="@+id/jaune"
             />
 
-        <RadioButton
+        <CheckBox
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Vert"
-            android:textColor="@android:color/tab_indicator_text"
             android:layout_weight="1"
             android:id="@+id/vert"
-            android:background="@android:color/tab_indicator_text"
             />
 
-        <RadioButton
+        <CheckBox
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Bleu"
             android:textColor="@android:color/tab_indicator_text"
             android:layout_weight="1"
-            android:background="@android:color/tab_indicator_text"
             android:id="@+id/bleu"
             />
 
 
-        <RadioButton
+        <CheckBox
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="indigo"
-            android:textColor="@android:color/tab_indicator_text"
             android:layout_weight="1"
             android:id="@+id/indigo"
-            android:background="@android:color/tab_indicator_text"
             />
 
 
-        <RadioButton
+        <CheckBox
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Violet"
-            android:textColor="@android:color/tab_indicator_text"
             android:layout_weight="1"
-            android:background="@android:color/tab_indicator_text"
             android:id="@+id/violet"
             />
 

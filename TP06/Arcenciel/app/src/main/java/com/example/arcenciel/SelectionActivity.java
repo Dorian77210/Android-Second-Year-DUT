@@ -14,6 +14,6 @@ public class SelectionActivity extends AppCompatActivity {
 
         ViewGroup group = this.findViewById(R.id.selection_container);
         View button = this.findViewById(R.id.ok_button);
-        button.setOnTouchListener(new ButtonController(group));
+        button.setOnClickListener(new ButtonController(group));
     }
 }
