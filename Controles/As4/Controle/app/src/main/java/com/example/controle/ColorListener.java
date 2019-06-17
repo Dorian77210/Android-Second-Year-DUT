@@ -1,10 +1,12 @@
 package com.example.controle;
 
 import android.app.Activity;
+import android.content.Context;
 import android.content.Intent;
 import android.graphics.Color;
 import android.util.Log;
 import android.view.KeyEvent;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.TextView;
 
 public class ColorListener implements TextView.OnEditorActionListener {
@@ -33,6 +35,9 @@ public class ColorListener implements TextView.OnEditorActionListener {
             intent.putExtra(BundleConstants.ERROR_COLOR, color);
             activity.startActivityForResult(intent, 1);
         }
+
+        InputMethodManager i = (InputMethodManager)v.getContext().getSystemService(Context.INPUT_METHOD_SERVICE);
+        i.hideSoftInputFromWindow(v.getWindowToken(), 0);
 
         return true;
     }

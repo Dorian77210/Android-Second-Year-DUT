@@ -60,6 +60,9 @@ public class GestureController implements GestureDetector.OnGestureListener {
         this.model.lastX = e2.getX();
         this.model.lastY = e2.getY();
 
+        this.model.initialX = e1.getX();
+        this.model.initialY = e1.getY();
+
         this.mainView.postInvalidate();
         return true;
     }
